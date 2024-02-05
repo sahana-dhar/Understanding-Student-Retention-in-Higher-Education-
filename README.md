@@ -26,6 +26,7 @@ From this preliminary visualization, we can tell that stronger relationships exi
 #### Results:
 <img width="400" alt="RFR feature importance" src="https://github.com/sahana-dhar/Understanding-Student-Retention-in-Higher-Education-/assets/113061193/16b56599-856b-42e0-a74b-bcab2437359b">
 <img width="700" alt="RFR feature scatter plots" src="https://github.com/sahana-dhar/Understanding-Student-Retention-in-Higher-Education-/assets/113061193/440fb5c1-b03b-4174-9c5b-c23bee29561b">
+
 Based on the RFR feature importance results, SAT scores, faculty salary, and earnings 6 years after entry contributed most to the retention rate. An RFR model with only those features returned these results when predicting retention rate:
 
 - Mean Squared Error: 0.0051
@@ -39,8 +40,35 @@ Based on the RFR feature importance results, SAT scores, faculty salary, and ear
 - Best suited for data with linear relationships​
 - Simple, easy to interpret ​
 #### Results:
+<img width="618" alt="linear regression feature importance" src="https://github.com/sahana-dhar/Understanding-Student-Retention-in-Higher-Education-/assets/113061193/20d1e1b5-8841-4e9c-bce9-21cf447634c6">
+<img width="821" alt="linear regression scatter plots" src="https://github.com/sahana-dhar/Understanding-Student-Retention-in-Higher-Education-/assets/113061193/15a3bcef-a4cf-40a5-ad01-3b4427cbd95f">
+
+Based on the Linear Regression feature importance results, SAT scores, share of first-generation students, and faculty salary contribute most to the retention rate. A Linear Regression model with only those features returned these results when predicting retention rate:
+
 - Mean Squared Error: 0.0043​
 - $R^2$: 0.6599​
 - Mean Absolute Error: 0.0494​
 - ​Low $MSE$ and $MAE$ values suggest a minimal difference between actual and predicted observations for retention rate
 - Top 3 predictor variables account for 66% of the variance in the target variable (retention rate)
+
+## Conclusions
+#### Initiatives for first-generation students
+- Aiding first-generation students with college applications as their families are more unfamiliar with the process​
+- Offering on-campus resources to help first-gen students feel more welcome and smoothen their transition to college​
+#### Improve faculty salary and benefits
+- Creating a comprehensive step-salary structure that factors in tenure, expertise, market data, geography, and performance  ​
+- Providing a clear path for promotion, raises, and ample benefits​
+#### Bolster campus culture
+- Combatting student unsatisfaction with proper feedback mechanisms: ​
+  - Tutoring services​
+  - Mental health and physical wellness support​
+  - Guidance counseling and career conferences​
+### Limitations and next steps
+- After dropping null values, there were only 794 colleges in the data set​
+- Retention rate is related to but doesn't fully encapsulate freshman satisfaction​
+- Working with a larger number of observations could improve predictive power​
+- Different features, both predictor and target, may more accurately answer the key questions​
+
+​
+
+​
